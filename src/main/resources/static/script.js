@@ -22,14 +22,14 @@ if (document.body.id === 'admin-dashboard-page') {
             .catch(error => console.error('Error fetching doctors:', error));
     }
 
-    function displayPatients(patients) {
+    function displayPatients(appointments) {
         const patientsTableBody = document.getElementById('patients-table-body');
         patientsTableBody.innerHTML = '';
-        patients.forEach(patient => {
+        appointments.forEach(appointment => {
             const row = patientsTableBody.insertRow();
-            row.insertCell().textContent = patient.patientName;
-            row.insertCell().textContent = patient.patientPhone;
-            row.insertCell().textContent = patient.patientEmail;
+            row.insertCell().textContent = appointment.patientName;
+            row.insertCell().textContent = appointment.patientPhone;
+            row.insertCell().textContent = appointment.patientEmail;
         });
     }
 
