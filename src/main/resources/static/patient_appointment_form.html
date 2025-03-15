@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<body id="patient-appointment-form-page" defer >
+<h1>Book Appointment</h1>
+
+<form id="patient-appointment-form"  >
+  <label for="patientName">Your Name:</label><br>
+  <input type="text" id="patientName" name="patientName" required><br>
+
+  <label for="patientPhone">Phone Number:</label><br>
+  <input type="text" id="patientPhone" name="patientPhone" required><br>
+
+  <label for="patientEmail">Email:</label><br>
+  <input type="email" id="patientEmail" name="patientEmail" required><br>
+
+<label for="doctor">Select Doctor:</label><br>
+<select id="doctor" name="doctorId" required>
+  <option value="">-- Select a Doctor --</option>
+</select><br><br>
+
+  <label for="appointmentDateTime">Preferred Date and Time:</label><br>
+  <input type="datetime-local" id="appointmentDateTime" name="appointmentDateTime" required><br><br>
+
+  <button type="submit">Request Appointment</button>
+</form>
+
+<script src="script.js"></script> </body>
+</html>
